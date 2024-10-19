@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "brand": "Lbel",
+    "name": "Mate Forever",
+    "category": "Labial",
+    "color": "Rouge",
+    "hex": "a80022",
+    "link": "https://lbel.tiendabelcorp.com.pe/labial-forever-barra/p?skuId=200116263"
+  },
+  {
+    "id": 2,
+    "brand": "Lbel",
+    "name": "Mate Forever",
+    "category": "Labial",
+    "color": "Rouge Passion",
+    "hex": "89091a",
+    "link": "https://lbel.tiendabelcorp.com.pe/labial-forever-barra/p?skuId=200116264"
+  },
+  {
+    "id": 3,
+    "brand": "Lbel",
+    "name": "Mate Forever",
+    "category": "Labial",
+    "color": "Scarlet",
+    "hex": "b0342a",
+    "link": "https://lbel.tiendabelcorp.com.pe/labial-forever-barra/p?skuId=200116265"
+  },
+  {
+    "id": 4,
+    "brand": "Lbel",
+    "name": "Mate Forever",
+    "category": "Labial",
+    "color": "Wine",
+    "hex": "5d0b26",
+    "link": "https://lbel.tiendabelcorp.com.pe/labial-forever-barra/p?skuId=200116266"
+  },
+  {
+    "id": 5,
+    "brand": "Lbel",
+    "name": "Mate Forever",
+    "category": "Labial",
+    "color": "Night",
+    "hex": "5c171f",
+    "link": "https://lbel.tiendabelcorp.com.pe/labial-forever-barra/p?skuId=200116266"
+  },
+  {
+    "id": 6,
+    "brand": "Lbel",
+    "name": "Mate Forever",
+    "category": "Labial",
+    "color": "Berry",
+    "hex": "c92f9b",
+    "link": "https://lbel.tiendabelcorp.com.pe/labial-forever-barra/p?skuId=200116268"
+  },
+  {
+    "id": 7,
+    "brand": "Esika",
+    "name": "COLORFIX",
+    "category": "Labial",
+    "color": "Pimienta Caliete",
+    "hex": "95091d",
+    "link": "https://esika.tiendabelcorp.com.pe/labial-colorfix-liquid-tattoo-shine/p?skuId=200113936"
+  },
+  {
+    "id": 8,
+    "brand": "Esika",
+    "name": "COLORFIX",
+    "category": "Labial",
+    "color": "Rojo Atraccion",
+    "hex": "b0112d",
+    "link": "https://esika.tiendabelcorp.com.pe/labial-colorfix-liquid-tattoo-shine/p?skuId=200113938"
+  },
+  {
+    "id": 9,
+    "brand": "Esika",
+    "name": "COLORFIX",
+    "category": "Labial",
+    "color": "Vino Encanto",
+    "hex": "a61053",
+    "link": "https://esika.tiendabelcorp.com.pe/labial-colorfix-liquid-tattoo-shine/p?skuId=200113938"
+  },
+  {
+    "id": 10,
+    "brand": "Esika",
+    "name": "COLORFIX",
+    "category": "Labial",
+    "color": "Nude Decidido",
+    "hex": "c15d76",
+    "link": "https://esika.tiendabelcorp.com.pe/labial-colorfix-liquid-tattoo-shine/p?skuId=200113939"
+  },
+  {
+    "id": 11,
+    "brand": "Esika",
+    "name": "COLORFIX",
+    "category": "Labial",
+    "color": "Nude Capaz",
+    "hex": "bf5e6c",
+    "link": "https://esika.tiendabelcorp.com.pe/labial-colorfix-liquid-tattoo-shine/p?skuId=200113940"
+  },
+  {
+    "id": 12,
+    "brand": "Cyzone",
+    "name": "CyPlay",
+    "category": "Labial",
+    "color": "Kiss & Blush",
+    "hex": "e86789",
+    "link": "https://cyzone.tiendabelcorp.com.pe/rubor-en-polvo-say-cheek-cyplay/p?skuId=200114052"
+  },
+  {
+    "id": 13,
+    "brand": "Cyzone",
+    "name": "CyPlay",
+    "category": "Labial",
+    "color": "Coral Rush",
+    "hex": "dd585e",
+    "link": "https://cyzone.tiendabelcorp.com.pe/rubor-en-polvo-say-cheek-cyplay/p?skuId=200114053"
+  },
+  {
+    "id": 14,
+    "brand": "Cyzone",
+    "name": "CyPlay",
+    "category": "Labial",
+    "color": "Flirty Peach",
+    "hex": "d86b5b",
+    "link": "https://cyzone.tiendabelcorp.com.pe/rubor-en-polvo-say-cheek-cyplay/p?skuId=200114054"
+  },
+  {
+    "id": 15,
+    "brand": "Cyzone",
+    "name": "CyPlay",
+    "category": "Labial",
+    "color": "Berry Blush",
+    "hex": "dd74cc",
+    "link": "https://cyzone.tiendabelcorp.com.pe/rubor-en-polvo-say-cheek-cyplay/p?skuId=200114055"
+  },
+  {
+    "id": 16,
+    "brand": "Cyzone",
+    "name": "Studio Look",
+    "category": "Labial",
+    "color": "Azucar Blanca 110-C",
+    "hex": "dfb68f",
+    "link": "https://cyzone.tiendabelcorp.com.pe/base-maquillaje-studio-look/p?skuId=200114154"
+  },
+  {
+    "id": 17,
+    "brand": "Cyzone",
+    "name": "Studio Look",
+    "category": "Labial",
+    "color": "Chantilly 130-F",
+    "hex": "cb9c89",
+    "link": "https://cyzone.tiendabelcorp.com.pe/base-maquillaje-studio-look/p?skuId=200114155"
+  },
+  {
+    "id": 18,
+    "brand": "Cyzone",
+    "name": "Studio Look",
+    "category": "Labial",
+    "color": "Vainilla 140-C",
+    "hex": "b18d6a",
+    "link": "https://cyzone.tiendabelcorp.com.pe/base-maquillaje-studio-look/p?skuId=200114156"
+  },
+  {
+    "id": 19,
+    "brand": "Cyzone",
+    "name": "Studio Look",
+    "category": "Labial",
+    "color": "Avena 170-N",
+    "hex": "bf9274",
+    "link": "https://cyzone.tiendabelcorp.com.pe/base-maquillaje-studio-look/p?skuId=200114157"
+  },
+  {
+    "id": 20,
+    "brand": "Cyzone",
+    "name": "Corrector de Maquillaje Studio Look",
+    "category": "Labial",
+    "color": "Moreno",
+    "hex": "bd6041",
+    "link": "https://cyzone.tiendabelcorp.com.pe/corrector-maquillaje-studio-look/p?skuId=200114294"
+  },
+  {
+    "id": 21,
+    "brand": "Cyzone",
+    "name": "Corrector de Maquillaje Studio Look",
+    "category": "Labial",
+    "color": "Medio",
+    "hex": "f88756",
+    "link": "https://cyzone.tiendabelcorp.com.pe/corrector-maquillaje-studio-look/p?skuId=200114105"
+  },
+  {
+    "id": 22,
+    "brand": "Cyzone",
+    "name": "Corrector de Maquillaje Studio Look",
+    "category": "Labial",
+    "color": "Medio Claro 1",
+    "hex": "e1916a",
+    "link": "https://cyzone.tiendabelcorp.com.pe/corrector-maquillaje-studio-look/p?skuId=200114104"
+  },
+  {
+    "id": 23,
+    "brand": "Cyzone",
+    "name": "Corrector de Maquillaje Studio Look",
+    "category": "Labial",
+    "color": "Claro",
+    "hex": "e69778",
+    "link": "https://cyzone.tiendabelcorp.com.pe/corrector-maquillaje-studio-look/p?skuId=200114103"
+  },
+  {
+    "id": 24,
+    "brand": "Cyzone",
+    "name": "Glowy Stain Studio Look",
+    "category": "Labial",
+    "color": "Grape Juice",
+    "hex": "7d317d",
+    "link": "https://cyzone.tiendabelcorp.com.pe/glowy-stain-studio-look/p?skuId=200116782"
+  },
+  {
+    "id": 25,
+    "brand": "Cyzone",
+    "name": "Glowy Stain Studio Look",
+    "category": "Labial",
+    "color": "Pink Lemonade",
+    "hex": "f8599c",
+    "link": "https://cyzone.tiendabelcorp.com.pe/glowy-stain-studio-look/p?skuId=200116779"
+  },
+  {
+    "id": 26,
+    "brand": "Cyzone",
+    "name": "Glowy Stain Studio Look",
+    "category": "Labial",
+    "color": "Caramel Latte",
+    "hex": "a32f42",
+    "link": "https://cyzone.tiendabelcorp.com.pe/glowy-stain-studio-look/p?skuId=200116780"
+  },
+  {
+    "id": 27,
+    "brand": "Cyzone",
+    "name": "Glowy Stain Studio Look",
+    "category": "Labial",
+    "color": "Strawberry Shake",
+    "hex": "e92340",
+    "link": "https://cyzone.tiendabelcorp.com.pe/glowy-stain-studio-look/p?skuId=200116779"
+  },
+  {
+    "id": 28,
+    "brand": "Cyzone",
+    "name": "Labial Mate Studio Look",
+    "category": "Labial",
+    "color": "Dusty Rose",
+    "hex": "c04057",
+    "link": "https://cyzone.tiendabelcorp.com.pe/labial-mate-studio-look/p?skuId=200114180"
+  },
+  {
+    "id": 29,
+    "brand": "Cyzone",
+    "name": "Labial Mate Studio Look",
+    "category": "Labial",
+    "color": "Pink Nude",
+    "hex": "b94d64",
+    "link": "https://cyzone.tiendabelcorp.com.pe/labial-mate-studio-look/p?skuId=200114179"
+  },
+  {
+    "id": 30,
+    "brand": "Cyzone",
+    "name": "Labial Mate Studio Look",
+    "category": "Labial",
+    "color": "Rose Nude",
+    "hex": "a4494a",
+    "link": "https://cyzone.tiendabelcorp.com.pe/labial-mate-studio-look/p?skuId=200114178"
+  }
+]

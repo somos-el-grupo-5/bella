@@ -1,0 +1,24 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore environment variable files
+.env
+
+# Ignore logs
+logs
+*.log
+npm-debug.log*
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore generated QR code
+qr-code.png
+
+# Ignore WhatsApp Web JS cache
+.wwebjs_cache/
