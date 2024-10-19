@@ -150,10 +150,50 @@ client.on('message', async (msg) => {
       delete userData[userId];
 
     } else {
+      if (msg.hasMedia) {
+        const media = await msg.downloadMedia();
+        const mediaPath = path.join(__dirname, `${userId}.png`);
+        const processedPath = path.join(__dirname, `processed-${userId}.png`);
+       
+        fs.writeFile(mediaPath, media.data, { encoding: 'base64' }, async (err) => {
+          if (err) {
+            console.error('Error saving the image:', err);
+          } else {
+            console.log(`Image saved as ${userId}.png`);
+            const formData = new FormData();
+            formData.append('image', fs.createReadStream(mediaPath));
+            let hexCode = await callChatGPT(userId, "write the exact hexadecial code of the color of the selected product with this format: `#xxxxxx`. only return the hexadecimal code with nothing more. not even a message, only the hexadecimal code");
+            console.log(hexCode);
+            formData.append('lip_color', hexCode);
+            
+            try {
+              const response = await axios.post('http://127.0.0.1:5000/process-image', formData, {
+                headers: {
+                  ...formData.getHeaders(),
+                },
+                responseType: 'arraybuffer'
+              });
+              
+              // Save the processed image
+              fs.writeFileSync(processedPath, Buffer.from(response.data));
+              console.log(`Processed image saved as processed-${userId}.png`);
+       
+              // Send processed image in chat
+              const processedImage = MessageMedia.fromFilePath(processedPath);
+              await client.sendMessage(msg.from, processedImage);
+      msg.reply("You look stunning with this color!!!");
+              
+            } catch (error) {
+              console.error('Error posting the image to the server:', error.message);
+            }
+          }
+        });
+       } else {
       // Continue the conversation with the assistant
       const response = await callChatGPT(userId, msg.body);
       const followUp = "\n\nWould you like to see how the makeup would look on your face? If yes, you can upload a photo!";
       msg.reply(response + followUp);
+       }
     }
   } catch (error) {
     console.error("Error:", error.message);
@@ -161,41 +201,7 @@ client.on('message', async (msg) => {
   }
 
   // Handle image uploads
-  if (msg.hasMedia) {
-    const media = await msg.downloadMedia();
-    const mediaPath = path.join(__dirname, `${userId}.png`);
-    const processedPath = path.join(__dirname, `processed-${userId}.png`);
-   
-    fs.writeFile(mediaPath, media.data, { encoding: 'base64' }, async (err) => {
-      if (err) {
-        console.error('Error saving the image:', err);
-      } else {
-        console.log(`Image saved as ${userId}.png`);
-        const formData = new FormData();
-        formData.append('image', fs.createReadStream(mediaPath));
-        formData.append('lip_color', '#E5183A');
-        
-        try {
-          const response = await axios.post('http://127.0.0.1:5000/process-image', formData, {
-            headers: {
-              ...formData.getHeaders(),
-            },
-            responseType: 'arraybuffer'
-          });
-          
-          // Save the processed image
-          fs.writeFileSync(processedPath, Buffer.from(response.data));
-          console.log(`Processed image saved as processed-${userId}.png`);
-   
-          // Send processed image in chat
-          const processedImage = MessageMedia.fromFilePath(processedPath);
-          await client.sendMessage(msg.from, processedImage);
-        } catch (error) {
-          console.error('Error posting the image to the server:', error.message);
-        }
-      }
-    });
-   }
+
 });
 
 client.initialize();
