@@ -10,7 +10,7 @@ Bella is an artificial intelligence chatbot designed to transform the personaliz
 
 ## Table of Contents
 
-- [Bella API](#bella-api)
+- [Bella Chatbot](#bella-chatbot)
   - [Table of Contents](#table-of-contents)
   - [Meet the Team](#meet-the-team)
   - [Features](#features)
@@ -19,6 +19,7 @@ Bella is an artificial intelligence chatbot designed to transform the personaliz
     - [Install dependencies](#install-dependencies)
     - [Add the Open AI API key](#add-the-open-ai-api-key)
   - [Results](#results)
+  - [Software Architecture](#software-architecture)
 
 ## Meet the Team
 
@@ -43,26 +44,34 @@ Bella is an artificial intelligence chatbot designed to transform the personaliz
 To install the Bella Chatbot, clone the repository, install the required dependencies and add the Open AI API key:
 
 ### Clone the repository
+
 ```bash
 git clone https://github.com/somos-el-grupo-5/bella.git
 ```
 
 ### Install dependencies
+
 ```bash
 cd bella
 npm install
 ```
 
 ### Add the Open AI API key
+
 Create a `.env` file in the root directory and add the following line:
+
 ```bash
 OPENAI_API_KEY=your-api-key
 ```
 
 ## Results
 
-![Screenshot 1](./assets/1.png)
-![Screenshot 2](./assets/2.png)
-![Screenshot 3](./assets/3.png)
+![Screenshot 1](./assets/1.jpg)
+![Screenshot 2](./assets/2.jpg)
+![Screenshot 3](./assets/3.jpg)
+
+## Software Architecture
+
+![Architecture](./assets/architecture.jpg)
 
 **2024 © Grupo 5 - All rights reserved**
