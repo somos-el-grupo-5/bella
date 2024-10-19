@@ -4,6 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const dotenv = require("dotenv");
 const axios = require("axios");
+const FormData = require('form-data'); // Add this line
 
 dotenv.config();
 
@@ -162,21 +163,39 @@ client.on('message', async (msg) => {
   // Handle image uploads
   if (msg.hasMedia) {
     const media = await msg.downloadMedia();
-
-    // Save the user's uploaded image with userId
     const mediaPath = path.join(__dirname, `${userId}.png`);
-    fs.writeFile(mediaPath, media.data, { encoding: 'base64' }, (err) => {
+    const processedPath = path.join(__dirname, `processed-${userId}.png`);
+   
+    fs.writeFile(mediaPath, media.data, { encoding: 'base64' }, async (err) => {
       if (err) {
         console.error('Error saving the image:', err);
       } else {
         console.log(`Image saved as ${userId}.png`);
+        const formData = new FormData();
+        formData.append('image', fs.createReadStream(mediaPath));
+        formData.append('lip_color', '#E5183A');
+        
+        try {
+          const response = await axios.post('http://127.0.0.1:5000/process-image', formData, {
+            headers: {
+              ...formData.getHeaders(),
+            },
+            responseType: 'arraybuffer'
+          });
+          
+          // Save the processed image
+          fs.writeFileSync(processedPath, Buffer.from(response.data));
+          console.log(`Processed image saved as processed-${userId}.png`);
+   
+          // Send processed image in chat
+          const processedImage = MessageMedia.fromFilePath(processedPath);
+          await client.sendMessage(msg.from, processedImage);
+        } catch (error) {
+          console.error('Error posting the image to the server:', error.message);
+        }
       }
     });
-
-    // Send the heart image as a response
-    const heartImage = MessageMedia.fromFilePath(path.join(__dirname, './heart.png'));
-    await client.sendMessage(msg.from, heartImage);
-  }
+   }
 });
 
 client.initialize();
