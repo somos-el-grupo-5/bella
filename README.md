@@ -61,3 +61,8 @@ OPENAI_API_KEY=your-api-key
 
 ## Results
 
+![Screenshot 1](./assets/1.png)
+![Screenshot 2](./assets/2.png)
+![Screenshot 3](./assets/3.png)
+
+**2024 © Grupo 5 - All rights reserved**
