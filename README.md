@@ -4,7 +4,7 @@
   <p>Grupo 5 · 2024</p>
 </div>
 
-# Bella API
+# Bella Chatbot
 
 Bella is an artificial intelligence chatbot designed to transform the personalized beauty experience through messaging platforms, such as WhatsApp. This digital assistant allows users to receive beauty product recommendations, facial analysis, and personalized advice without the need for additional apps or augmented reality experiences. Additionally, the Bella API connects users to facial analysis features, allowing clients to virtually try on Belcorp products.
 
