@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./logo.png" alt="Logo" height="180">
+  <img src="./assets/logo.png" alt="Logo" height="180">
   <h3 align="center">Bella Chatbot - Belcorp Hackathon</h3>
   <p>Grupo 5 · 2024</p>
 </div>
